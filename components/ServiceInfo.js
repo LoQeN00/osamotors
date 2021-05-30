@@ -26,9 +26,6 @@ const ServiceInfo = ({service,back}) => {
             <h2 className={classes.service__title}>{parse(languages[actualLanguage][title])}</h2>
             <span className={classes.service__text}>{parse(languages[actualLanguage][content])}</span>
             <button className={classes.service__button} onClick={() => back("")}>Wróć</button>
-            <div className={classes.service__wrapper}>
-                <img className={classes.service__wrapper__img} src={img} alt="img" />
-            </div>
         </section>
     )
 }
