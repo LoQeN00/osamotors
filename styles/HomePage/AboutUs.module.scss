@@ -1,0 +1,172 @@
+.aboutus {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgb(24,24,35);
+    color: rgb(39, 39, 39);
+    overflow: hidden;
+    -webkit-box-shadow: 0px 7px 35px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 7px 35px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 7px 35px 2px rgba(0,0,0,0.75);
+
+    
+    &__info {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+    &__text {
+        position: relative;
+        font-size: 2rem; 
+        padding: 3rem 0;
+        max-width: 89rem;
+        line-height: 150%;
+        color: rgb(180, 180, 180);
+    }
+    &__text::before {
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 2px;
+        background-color: rgb(214, 214, 214);
+        top: 16px;
+        left: 2px;
+    }
+}
+
+
+.headingSecond {
+    font-size: 5rem;
+    padding-bottom: 6rem;
+    text-transform: uppercase;
+    max-width: 900px;
+    text-align: center;
+    transform: translateX(6rem);
+}
+
+.firstLine {
+    margin-left: -15rem;
+    padding-right: 15rem;
+    line-height: 200%;
+    color: rgb(211, 211, 211);
+}
+
+.gold {
+    color: #D7BE69;
+}
+
+
+@media (max-width: 1199.98px) {
+
+    .headingSecond {
+        transform: translateX(calc(5vw + 5rem));   
+        
+    }
+    .aboutus{
+        &__image {
+            transform: translate(-65%,0);
+        } 
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .headingSecond {
+        transform: translateX(5rem);
+        font-size: 4rem;    
+    }
+    .aboutus {
+        &__image {
+            height: 70rem;
+            transform: translate(-70%,0);
+        }
+        &__text {
+            max-width: 65rem;
+        }
+    }
+       .firstLine {
+        margin-left: -5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width: 899.98px) {
+
+    .aboutus{
+        &__image {
+            transform: translate(-80%,0);
+        } 
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .headingSecond {
+        font-size: 3rem;
+        transform: translateX(6rem);   
+    }
+    .firstLine {
+        margin-left: -7rem; 
+    }
+    .aboutus {
+        &__image {
+            height: 70rem;
+            transform: translate(-85%,0);
+            max-width: none;
+        }
+        &__text {
+            line-height: 175%;
+        }
+    }
+}
+
+@media (max-width: 479.98px) { 
+    .headingSecond {
+        transform: translateX(6rem);
+        font-size: 18px;  
+    }
+    .firstLine {
+        margin-left: -5rem;
+        padding-right: 5rem;
+    }
+    .aboutus{
+        min-height: 70vh;
+        &__image {
+            display: none;
+            pointer-events: none;
+            user-select: none;
+        }
+        &__text {
+            line-height: 200%;
+        }
+    }
+}
+
+// Iphone 5/SE 
+
+@media (max-width: 321.98px) { 
+    .headingSecond {
+        transform: translateX(4rem);
+    }
+    .firstLine {
+        font-size: 2.5rem;
+
+        margin-left: -6rem;
+        padding-right: 3rem;
+    }
+    .gold {
+        font-size: 2.5rem;
+    }
+    .aboutus{
+        min-height: 95vh;
+        &__image {
+            display: none;
+            pointer-events: none;
+            user-select: none;
+        }
+        &__text {
+            max-width: 110rem;
+            line-height: 200%;
+        }
+    }
+}

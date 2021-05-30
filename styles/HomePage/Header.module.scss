@@ -1,0 +1,79 @@
+.header {
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        img {
+            max-width: 100%;
+            height: 16rem;
+        }
+
+    }
+
+}
+
+
+
+.headingPrimary {
+    color: white;
+    font-size: 6rem;
+}
+
+@media (max-width: 1107px) {
+    .header {
+        &__logo {
+            img {
+                height: 12rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 870px) {
+    .header {
+        &__logo {
+            img {
+                height: 10rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 694px) {
+    .header {
+        &__logo {
+            img {
+                height: 8rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 400px) {
+    .header {
+        &__logo {
+            img {
+                height: 6rem;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

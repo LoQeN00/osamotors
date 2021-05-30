@@ -1,0 +1,33 @@
+.active {
+    display: flex !important;
+}
+
+
+
+.white {
+    color: white;
+}
+
+.transparent {
+    background-color: transparent !important;
+}
+
+.hidden {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translateY(-100px);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 4.5rem;
+    padding: 3rem 0;
+    color: rgb(28,28,38);
+}
+

@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Light.ttf);
+}
+  
+
+
+html {
+    font-size: 10px; //1 rem = 10 px
+    font-family: Lato;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+$color-gold : #D7BE69;
+
+
+// Tablets
+@media (max-width: 991.98px) {
+    html {
+        font-size: 9px; 
+    }
+}
+// Landscape phones
+@media (max-width: 767.98px) { 
+    html {
+        font-size: 8px; 
+    }
+}
+// Phones
+@media (max-width: 479.98px) { 
+    html {
+        font-size: 6px; 
+    }
+}
+
+
+
+
+
+
+
