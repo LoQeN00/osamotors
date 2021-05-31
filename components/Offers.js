@@ -36,21 +36,21 @@ const Offers = () => {
                     <div className={`${classes.row}`}>
                         <div className="flex">
 
-                                <div onClick={() => handleClickOffer("card1Content","card1Title","/HomePageImages/25.jpg")} className={`${classes.card}`}>
+                                <a href="#offers"><div onClick={() => handleClickOffer("card1Content","card1Title","/HomePageImages/25.jpg")} className={`${classes.card}`}>
                                     <span className={classes.card__title}>Doktor Porsche</span>
                                     <div className={classes.card__img}>
                                         <img src="/HomePageImages/25dark.jpg" alt="offer img" />
                                     </div>
-                                </div>
+                                </div></a>
 
-                                <div onClick={() => handleClickOffer("card5Content","card5Title","/HomePageImages/43.jpg")} className={`${classes.card}`}>
+                               <a href="#offers"><div onClick={() => handleClickOffer("card5Content","card5Title","/HomePageImages/43.jpg")} className={`${classes.card}`}>
                                     <div className={classes.card__title}>
                                     Warsztat
                                     </div>
                                     <div className={classes.card__img}>
                                         <img src="/HomePageImages/43dark.jpg" alt="offer img" />
                                     </div>
-                                </div>
+                                </div></a>
 
                             </div>
                         </div>
@@ -59,30 +59,30 @@ const Offers = () => {
                             <h2 className="heading">Projekt Ivory Line</h2>
                         </div>
                         <div className="flex">
-                            <div onClick={() => handleClickOffer("card2Content","card2Title","/HomePageImages/23.jpg")} className={`${classes.card}`}>
+                        <a href="#offers"><div onClick={() => handleClickOffer("card2Content","card2Title","/HomePageImages/23.jpg")} className={`${classes.card}`}>
                                 <div className={classes.card__title}>
                                 Blue Line
                                 </div>
                                 <div className={classes.card__img}>
                                     <img src="/HomePageImages/23dark.jpg" alt="offer img" />
                                 </div>
-                            </div>
-                            <div onClick={() => handleClickOffer("card3Content","card3Title","/HomePageImages/26.jpg")} className={`${classes.card}`}>
+                            </div></a>
+                            <a href="#offers"><div onClick={() => handleClickOffer("card3Content","card3Title","/HomePageImages/26.jpg")} className={`${classes.card}`}>
                                 <div className={classes.card__title}>
                                 Black Line
                                 </div>
                                 <div className={classes.card__img}>
                                     <img src="/HomePageImages/26dark.jpg" alt="offer img" />
                                 </div>
-                            </div>
-                            <div onClick={() => handleClickOffer("card4Content","card4Title","/HomePageImages/31.jpg")} className={`${classes.card}`}>
+                            </div></a>
+                            <a href="#offers"><div onClick={() => handleClickOffer("card4Content","card4Title","/HomePageImages/31.jpg")} className={`${classes.card}`}>
                                 <div className={classes.card__title}>
                                 Red Line
                                 </div>
                                 <div className={classes.card__img}>
                                     <img src="/HomePageImages/31dark.jpg" alt="offer img" />
                                 </div>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
                 </div>

@@ -19,13 +19,15 @@ const ServiceInfo = ({service,back}) => {
         
     },[lang])
 
-    console.log(service)
-
     return (
-        <section id='offers' className={classes.service}>
-            <h2 className={classes.service__title}>{parse(languages[actualLanguage][title])}</h2>
-            <span className={classes.service__text}>{parse(languages[actualLanguage][content])}</span>
-            <button className={classes.service__button} onClick={() => back("")}>Wróć</button>
+        <section id='offers' className={classes.service} style={{backgroundImage: `linear-gradient(to right bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(${img})`,backgroundSize: 'cover',backgroundPosition: 'center'   }}>
+           
+                <h2 className={classes.service__title}>{parse(languages[actualLanguage][title])}</h2>
+                <span className={classes.service__text}>{parse(languages[actualLanguage][content])}</span>
+                <button className={classes.service__button} onClick={() => back("")}>Wróć</button>
+            
+                
+            
         </section>
     )
 }
