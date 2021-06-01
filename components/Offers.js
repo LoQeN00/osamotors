@@ -43,7 +43,7 @@ const Offers = () => {
                                     </div>
                                 </div></a>
 
-                               <a href="#offers"><div onClick={() => handleClickOffer("card5Content","card5Title","/HomePageImages/43.jpg")} className={`${classes.card}`}>
+                               <a href="#offers"><div onClick={() => handleClickOffer("card5Content","card5Title","/HomePageImagesLow/43_low.jpg")} className={`${classes.card}`}>
                                     <div className={classes.card__title}>
                                     Warsztat
                                     </div>
@@ -59,7 +59,7 @@ const Offers = () => {
                             <h2 className="heading">Projekt Ivory Line</h2>
                         </div>
                         <div className="flex">
-                        <a href="#offers"><div onClick={() => handleClickOffer("card2Content","card2Title","/HomePageImages/23.jpg")} className={`${classes.card}`}>
+                        <a href="#offers"><div onClick={() => handleClickOffer("card2Content","card2Title","/HomePageImagesLow/23_low.jpg")} className={`${classes.card}`}>
                                 <div className={classes.card__title}>
                                 Blue Line
                                 </div>
@@ -67,7 +67,7 @@ const Offers = () => {
                                     <img src="/HomePageImages/23dark.jpg" alt="offer img" />
                                 </div>
                             </div></a>
-                            <a href="#offers"><div onClick={() => handleClickOffer("card3Content","card3Title","/HomePageImages/26.jpg")} className={`${classes.card}`}>
+                            <a href="#offers"><div onClick={() => handleClickOffer("card3Content","card3Title","/HomePageImagesLow/26_low.jpg")} className={`${classes.card}`}>
                                 <div className={classes.card__title}>
                                 Black Line
                                 </div>
@@ -75,7 +75,7 @@ const Offers = () => {
                                     <img src="/HomePageImages/26dark.jpg" alt="offer img" />
                                 </div>
                             </div></a>
-                            <a href="#offers"><div onClick={() => handleClickOffer("card4Content","card4Title","/HomePageImages/31.jpg")} className={`${classes.card}`}>
+                            <a href="#offers"><div onClick={() => handleClickOffer("card4Content","card4Title","/HomePageImagesLow/31_low.jpg")} className={`${classes.card}`}>
                                 <div className={classes.card__title}>
                                 Red Line
                                 </div>
