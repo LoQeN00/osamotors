@@ -36,7 +36,7 @@ const Offers = () => {
                     <div className={`${classes.row}`}>
                         <div className="flex">
 
-                                <a href="#offers"><div onClick={() => handleClickOffer("card1Content","card1Title","/HomePageImages/25.jpg")} className={`${classes.card}`}>
+                                <a href="#offers"><div onClick={() => handleClickOffer("card1Content","card1Title","/HomePageImagesLow/25_low.jpg")} className={`${classes.card}`}>
                                     <span className={classes.card__title}>Doktor Porsche</span>
                                     <div className={classes.card__img}>
                                         <img src="/HomePageImages/25dark.jpg" alt="offer img" />
