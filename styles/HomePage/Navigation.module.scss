@@ -47,8 +47,8 @@
     letter-spacing: 1px;
 }
 
-.navbarLinks li:nth-child(4) {
-    margin-left: 3.5rem;
+.navbarLinks li:nth-child(5) {
+    max-width: 50px;
     padding: 0;
 }
 
@@ -137,5 +137,14 @@
 
     .navbarLinks .active {
         display: flex;
+    }
+}
+
+@media (max-width: 479.98px){
+    .lang {
+      padding: 4px;
+      font-size: 20px;
+        padding-left: 12px;
+        font-size: 16px;
     }
 }

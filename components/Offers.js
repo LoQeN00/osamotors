@@ -43,12 +43,12 @@ const Offers = () => {
                                     </div>
                                 </div></a>
 
-                               <a href="#offers"><div onClick={() => handleClickOffer("card5Content","card5Title","/1920x1080/43_low.jpg")} className={`${classes.card}`}>
+                               <a href="#offers"><div onClick={() => handleClickOffer("card5Content","card5Title","/1920x1080/13_low.jpg")} className={`${classes.card}`}>
                                     <div className={classes.card__title}>
                                     Warsztat
                                     </div>
                                     <div className={classes.card__img}>
-                                        <img src="/HomePageImages/43dark.jpg" alt="offer img" />
+                                        <img src="/HomePageImages/13dark.jpg" alt="offer img" />
                                     </div>
                                 </div></a>
 

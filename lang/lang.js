@@ -20,7 +20,8 @@ export const languages = {
         navAboutUs: "O nas",
         navOffers: "Usługi",
         navGallery: "Galeria",
-        navContact: "Kontakt"
+        navContact: "Kontakt",
+        viewGallery: "Zobacz całą galerię"
     },
     cz: {
         firstLine: 'Tam&nbsp;kde&nbsp;jiní&nbsp;bezradně&nbsp;krčí&nbsp;rameny',
@@ -42,7 +43,8 @@ export const languages = {
         navAboutUs: "O nás",
         navOffers: "Služby",
         navGallery: "Galerie",
-        navContact: "Kontakt"
+        navContact: "Kontakt",
+        viewGallery: "Zobrazit celou galerii"
     },
     de: {
         firstLine: 'Wo&nbsp;andere&nbsp;ratlos&nbsp;ihre&nbsp;Hände&nbsp;ausbreiten',
@@ -64,7 +66,8 @@ export const languages = {
         navAboutUs: "Über uns",
         navOffers: "Services",
         navGallery: "Galerie",
-        navContact: "Kontakt"
+        navContact: "Kontakt",
+        viewGallery: "Die gesamte Galerie"
     },
     hs: {
         firstLine: 'Cuando&nbsp;uno&nbsp;no&nbsp;encuentra&nbsp;soluciones',
@@ -86,7 +89,8 @@ export const languages = {
         navAboutUs: "Sobre nosotros",
         navOffers: "Servicios",
         navGallery: "Galería",
-        navContact: "Contacto"
+        navContact: "Contacto",
+        viewGallery: "Toda la galería"
     },
     en: {
         firstLine: 'Where&nbsp;others&nbsp;throw&nbsp;their&nbsp;hands&nbsp;up',
@@ -108,7 +112,8 @@ export const languages = {
         navAboutUs: "About us",
         navOffers: "Services",
         navGallery: "Gallery",
-        navContact: "Contact"
+        navContact: "Contact",
+        viewGallery: "View all gallery"
     }
 
 

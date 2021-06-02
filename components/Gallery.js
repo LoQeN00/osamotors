@@ -63,7 +63,7 @@ const Gallery = () => {
                     <img onClick={() => openGallery("/HomePageImages/33.jpg")} src="/HomePageImages/33.jpg" className={classes.img} alt="img" />
                     <img onClick={() => openGallery("/HomePageImages/66.jpg")} src="/HomePageImages/66.jpg" className={classes.img} alt="img" />
                 </div>
-                <button className={classes.gallery__button} onClick={toggleGallery}>Zobacz całą galerię</button> 
+                <button className={classes.gallery__button} onClick={toggleGallery}>{parse(languages[actualLanguage].viewGallery)}</button> 
                 <ReactBnbGallery
                     show={galleryOpened}
                     photos={galleryPhotos}
