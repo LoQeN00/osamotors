@@ -1,10 +1,25 @@
-import React from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import classes from '../styles/HomePage/Contact.module.scss'
+import {LangContext} from "../components/LangContext"
+import {languages} from "../lang/lang.js"
+import parse from "html-react-parser"
 
 const Contact = () => {
+
+    const {lang} = useContext(LangContext)
+
+    const [actualLanguage,setActualLanguage] = useState("pl")
+
+    useEffect(() => {
+
+        setActualLanguage(lang)
+        
+    },[lang])
+
+
     return (
         <section className={classes.contact} id='contact'>
-            <h2 className={classes.contact__title}>Kontakt</h2>
+            <h2 className={classes.contact__title}>{parse(languages[actualLanguage].navContact)}</h2>
             <div className={classes.contact__wrapper}>
 
                 <div className={classes.contact__wrapper__content}>

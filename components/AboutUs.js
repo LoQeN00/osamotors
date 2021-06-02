@@ -24,7 +24,7 @@ const AboutUs = () => {
     return (
         <>
 
-            <section className={classes.aboutus}>
+            <section id="aboutus" className={classes.aboutus}>
                 <div className={classes.aboutus__info}>
                     <h2 className={classes.headingSecond}>
                         <span className={classes.firstLine}>{parse(languages[actualLanguage].firstLine)} </span>

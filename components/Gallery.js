@@ -1,16 +1,27 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect,useContext} from 'react'
 import classes from '../styles/HomePage/Gallery.module.scss'
 import ReactBnbGallery from 'react-bnb-gallery'
+import {LangContext} from "../components/LangContext"
+import {languages} from "../lang/lang.js"
+import parse from "html-react-parser"
 
 
 
 const Gallery = () => {
 
+    const {lang} = useContext(LangContext)
+
     const [galleryOpened,setGalleryOpened] = useState(false)
 
     const toggleGallery = () => setGalleryOpened(!galleryOpened)
-
     
+    const [actualLanguage,setActualLanguage] = useState("pl")
+
+    useEffect(() => {
+
+        setActualLanguage(lang)
+        
+    },[lang])
 
     const photos = []
 
@@ -45,7 +56,7 @@ const Gallery = () => {
 
     return (
         <section className={classes.gallery}>
-            <h2 id='gallery' className={classes.gallery__title}>Galeria</h2>
+            <h2 id='gallery' className={classes.gallery__title}>{parse(languages[actualLanguage].navGallery)}</h2>
                 <div className={classes.gallery__wrapper}>
                     <img onClick={() => openGallery("/HomePageImages/12.jpg")} src="/HomePageImages/12.jpg" className={classes.img} alt="img" />
                     <img onClick={() => openGallery("/HomePageImages/1.jpg")} src="/HomePageImages/1.jpg" className={classes.img} alt="img" />

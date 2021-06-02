@@ -1,11 +1,14 @@
 import React,{useState,useEffect,useContext} from 'react'
 import classes from '../styles/HomePage/Navigation.module.scss'
 import {LangContext} from "../components/LangContext"
+import {languages} from "../lang/lang.js"
+import parse from "html-react-parser"
 
 
 const Navigation = () => {
 
-  const {lang,setLang} = useContext(LangContext)
+      const {lang,setLang} = useContext(LangContext)
+   
 
     const [toggleNav,setToggleNav] = useState(false)
 
@@ -19,6 +22,17 @@ const Navigation = () => {
     const handleLangChange = e => {
       setLang(e.target.value)
     }
+
+
+    const [actualLanguage,setActualLanguage] = useState("pl")
+
+    useEffect(() => {
+
+        setActualLanguage(lang)
+        
+    },[lang])
+
+  
 
 useEffect(() => {
   const threshold = 0;
@@ -62,9 +76,10 @@ console.log(lang)
                 </button>
                 <div className={toggleNav ? `${classes.navbarLinks} active` : classes.navbarLinks}>
                 <ul>
-                    <li><a onClick={closeNav} href="#offers">Usługi</a></li>
-                    <li><a onClick={closeNav} href="#gallery">Galeria</a></li>
-                    <li><a onClick={closeNav} href="#contact">Kontakt</a></li>
+                    <li><a onClick={closeNav} href="#aboutus">{parse(languages[actualLanguage].navAboutUs)}</a></li>
+                    <li><a onClick={closeNav} href="#offers">{parse(languages[actualLanguage].navOffers)}</a></li>
+                    <li><a onClick={closeNav} href="#gallery">{parse(languages[actualLanguage].navGallery)}</a></li>
+                    <li><a onClick={closeNav} href="#contact">{parse(languages[actualLanguage].navContact)}</a></li>
                     <li>
                     <select className={classes.lang} value={lang} onChange={handleLangChange}>
                             <option  value="pl">PL</option>

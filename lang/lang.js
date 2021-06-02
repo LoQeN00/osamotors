@@ -17,6 +17,10 @@ export const languages = {
         card3Content: "Odbudowa silnika wraz z modyfikacją pojemności bez przygotowania pod instalację turbo, w celu uzyskania większej mocy przy okazji realizacji prac remontowych",
         card4Content: "Projekt obejmujący odbudowę silnika i przygotowanie go do przyjęcia dodatkowych obciążeń związanych z instalacją zestawu turbo, propozycja dla fanów motorsportu i tych, dla których wolnossący silnik to za mało",
         card5Content: "Realizacja całego wachlarza prac serwisowych i naprawczych wszystkich marek. Nasze przewagi to skrupulatność, solidność i olbrzymia baza wiedzy wywodząca się z naszego doświadczenia",
+        navAboutUs: "O nas",
+        navOffers: "Usługi",
+        navGallery: "Galeria",
+        navContact: "Kontakt"
     },
     cz: {
         firstLine: 'Tam&nbsp;kde&nbsp;jiní&nbsp;bezradně&nbsp;krčí&nbsp;rameny',
@@ -35,6 +39,10 @@ export const languages = {
         card3Content: "Přestavba motoru spolu s modifikací obsahu bez přípravy pod instalaci turbo, s cílem získání většího výkonu při příležitosti realizace opravy",
         card4Content: "Projekt obsahující přestavbu motoru a jeho přípravu k přijetí dodatečného zatížení spojeného s instalací sestavu turbo, návrh pro nadšence motorových sportů a těch, pro něž je motor s atmosférickým sáním příliš málo",
         card5Content: "Realizace celé palety servisních prací a oprav všech automobilových značek. Naší převahou jsou svědomitost, solidnost ohromné znalosti a vědomosti, které vyplývají z našich dlouholetých zkušeností",
+        navAboutUs: "O nás",
+        navOffers: "Služby",
+        navGallery: "Galerie",
+        navContact: "Kontakt"
     },
     de: {
         firstLine: 'Wo&nbsp;andere&nbsp;ratlos&nbsp;ihre&nbsp;Hände&nbsp;ausbreiten',
@@ -53,7 +61,10 @@ export const languages = {
         card3Content: "Motorrekonstruktion mit Hubraumausbau ohne Turbolader, mit dem Ziel Zusatzleistung zu erzielen",
         card4Content: "Ein Projekt, bei dem der Motor umgebaut und auf die Aufnahme zusätzlicher Lasten im Zusammenhang mit dem Einbau eines Turbokits vorbereitet wird, ein Vorschlag für Motorsportfans und solche, für die ein freisaugender Motor nicht ausreichend ist ",
         card5Content: "Implementierung des gesamten Service- und Reparaturwerks für alle Marken. Unsere Vorteile sind Sorgfalt, Zuverlässigkeit und eine riesige Wissensbasis, die sich aus unserer Erfahrung ergibt",
-        
+        navAboutUs: "Über uns",
+        navOffers: "Services",
+        navGallery: "Galerie",
+        navContact: "Kontakt"
     },
     hs: {
         firstLine: 'Cuando&nbsp;uno&nbsp;no&nbsp;encuentra&nbsp;soluciones',
@@ -72,6 +83,10 @@ export const languages = {
         card3Content: "Reconstrucción del motor con modificación de capacidad sin preparación para la instalación del turbo, con el fin de obtener más potencia.",
         card4Content: "Reconstrucción del motor y su preparación para aceptar cargas adicionales relacionadas con la instalación de un turbo kit, ofrecido especialmente para los fanáticos del automovilismo y para aquellos que un motor atmosférico no es suficiente.",
         card5Content: "Implementación de toda la gama de trabajos de servicio y reparación en todas las marcas. Ofrecemos meticulosidad, fiabilidad y una enorme base de conocimientos derivados de nuestra experiencia.",
+        navAboutUs: "Sobre nosotros",
+        navOffers: "Servicios",
+        navGallery: "Galería",
+        navContact: "Contacto"
     },
     en: {
         firstLine: 'Where&nbsp;others&nbsp;throw&nbsp;their&nbsp;hands&nbsp;up',
@@ -90,7 +105,10 @@ export const languages = {
         card3Content: "Rebuilding of the engine with capacity modification without preparation for the turbo installation",
         card4Content: "Project involving rebuilding the engine and preparing it to accept additional loads connected with the installation of a turbo kit, offered especially for fans of motorsport and those for whom a naturally aspirated engine is not enough",
         card5Content: "- Implementation of the entire range of service and repair work on all brands. Our advantages are meticulousness, reliability and a huge knowledge base derived from our experience",
-
+        navAboutUs: "About us",
+        navOffers: "Services",
+        navGallery: "Gallery",
+        navContact: "Contact"
     }
 
 
