@@ -29,7 +29,7 @@ const Gallery = () => {
 
     for (let i=1 ; i<=95 ; i++) {
         photos.push({
-            photo: `/HomePageImages/${i}.jpg`,
+            photo: `/1920x1080/${i}_low.jpg`,
             caption: "",
             subcaption: "",
             thumbnail: `/HomePageImagesLow/${i}_low.jpg`
@@ -42,6 +42,7 @@ const Gallery = () => {
         const index = photos.findIndex(photo => photo.photo == url)
         photos.splice(index,1)
         const splitPath = url.split("/")
+        console.log(splitPath)
         console.log(splitPath)
         photos.unshift({
             photo: url,
@@ -59,10 +60,10 @@ const Gallery = () => {
         <section className={classes.gallery}>
             <h2 id='gallery' className={classes.gallery__title}>{parse(languages[actualLanguage].navGallery)}</h2>
                 <div className={classes.gallery__wrapper}>
-                    <img onClick={() => openGallery("/HomePageImages/12.jpg")} src="/HomePageImages/12.jpg" className={classes.img} alt="img" />
-                    <img onClick={() => openGallery("/HomePageImages/1.jpg")} src="/HomePageImages/1.jpg" className={classes.img} alt="img" />
-                    <img onClick={() => openGallery("/HomePageImages/33.jpg")} src="/HomePageImages/33.jpg" className={classes.img} alt="img" />
-                    <img onClick={() => openGallery("/HomePageImages/66.jpg")} src="/HomePageImages/66.jpg" className={classes.img} alt="img" />
+                    <img onClick={() => openGallery("/1920x1080/12_low.jpg")} src="/HomePageImages/12.jpg" className={classes.img} alt="img" />
+                    <img onClick={() => openGallery("/1920x1080/1_low.jpg")} src="/HomePageImages/1.jpg" className={classes.img} alt="img" />
+                    <img onClick={() => openGallery("/1920x1080/33_low.jpg")} src="/HomePageImages/33.jpg" className={classes.img} alt="img" />
+                    <img onClick={() => openGallery("/1920x1080/66_low.jpg")} src="/HomePageImages/66.jpg" className={classes.img} alt="img" />
                 </div>
                 <button className={classes.gallery__button} onClick={toggleGallery}>{parse(languages[actualLanguage].viewGallery)}</button> 
                 <ReactBnbGallery
