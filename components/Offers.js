@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useContext} from 'react'
+import React,{useState,useEffect,useContext,useCallback} from 'react'
 import classes from '../styles/HomePage/Offers.module.scss'
 import {LangContext} from "../components/LangContext"
 import ServiceInfo from "../components/ServiceInfo"
@@ -21,12 +21,12 @@ const Offers = () => {
 
     const [actualService,setActualService] = useState("")
 
-    const handleClickOffer = (content,title,img) => {
+    const handleClickOffer = useCallback((content,title,img) => {
        console.log(content, img, title )
 
        setActualService({content,title,img})
 
-    }
+    },[actualService])
 
     if (actualService=="") {
         return (

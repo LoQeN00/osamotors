@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useContext} from 'react'
+import React,{useState,useEffect,useContext,useCallback} from 'react'
 import classes from '../styles/HomePage/Gallery.module.scss'
 import ReactBnbGallery from 'react-bnb-gallery'
 import {LangContext} from "../components/LangContext"
@@ -13,7 +13,9 @@ const Gallery = () => {
 
     const [galleryOpened,setGalleryOpened] = useState(false)
 
-    const toggleGallery = () => setGalleryOpened(!galleryOpened)
+    // const toggleGallery = () => 
+
+    const toggleGallery = useCallback(() => setGalleryOpened(!galleryOpened), [galleryOpened])
     
     const [actualLanguage,setActualLanguage] = useState("pl")
 
@@ -36,8 +38,7 @@ const Gallery = () => {
 
     const [galleryPhotos,setGalleryPhotos] = useState(photos)
 
-    const openGallery = (url) => {
-        console.log(url)
+    const openGallery = useCallback((url) => {
         const index = photos.findIndex(photo => photo.photo == url)
         photos.splice(index,1)
         const splitPath = url.split("/")
@@ -52,7 +53,7 @@ const Gallery = () => {
         setGalleryPhotos(photos)
 
         toggleGallery()
-    }
+    }, [galleryOpened])
 
     return (
         <section className={classes.gallery}>

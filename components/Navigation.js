@@ -1,18 +1,19 @@
-import React,{useState,useEffect,useContext} from 'react'
+import React,{useState,useEffect,useContext,useCallback} from 'react'
 import classes from '../styles/HomePage/Navigation.module.scss'
 import {LangContext} from "../components/LangContext"
 import {languages} from "../lang/lang.js"
 import parse from "html-react-parser"
 
 
+
 const Navigation = () => {
 
-      const {lang,setLang} = useContext(LangContext)
+    const {lang,setLang} = useContext(LangContext)
    
 
     const [toggleNav,setToggleNav] = useState(false)
 
-    const handleClick = () => setToggleNav(!toggleNav)
+    const handleClick = useCallback(() => setToggleNav(!toggleNav), [toggleNav])
 
     const [scrollDir, setScrollDir] = useState("scrolling up");
 
@@ -64,8 +65,7 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", onScroll);
 }, [scrollDir]);
 
-console.log(lang)
-   
+
     return (
         <nav className={scrollDir == "scrolling down" ? `${classes.navbar} hidden`: classes.navbar}>
             <div className={classes.brandTitle}>OSAMOTORS</div>
